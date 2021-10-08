@@ -9,54 +9,92 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <style type="text/css">
+    .button {
+      display: inline-block;
+      border-radius: 20%;
+      /* 角丸       */
+      font-size: 18pt;
+      /* 文字サイズ */
+      text-align: center;
+      /* 文字位置   */
+      cursor: pointer;
+      /* カーソル   */
+      padding: 12px 12px;
+      /* 余白       */
+      background: #66ff66;
+      /* 背景色     */
+      color: #000000;
+      /* 文字色     */
+      line-height: 1em;
+      /* 1行の高さ  */
+      transition: .3s;
+      /* なめらか変化 */
+      box-shadow: 6px 6px 3px #666666;
+      /* 影の設定 */
+      border: 2px solid #66ff66;
+      /* 枠の指定 */
+    }
+
+    .button:hover {
+      box-shadow: none;
+      /* カーソル時の影消去 */
+      color: #66ff66;
+      /* 背景色     */
+      background: #000000;
+      /* 文字色     */
+    }
+  </style>
 </head>
 
-<body>
+<body style="background-color: black; color:#02E833;">
+  <MARQUEE DIRECTION="right" SCROLLDELAY="0"><IMG src="mario.gif" width="40" height="40" border="0"></MARQUEE>
   <div style="text-align: center; border: solid; max-width: 200px; margin: auto; padding: 30px;">
     <h2>IP or Host</h2>
     <form>
-      <input type="text" id="host"> 
-      <input type="submit" value="接続" onclick="sshConnect()">
+      <input style="height: 50px; width: 200px;" type="text" id="host">
+      <input class="button" type="submit" value="接続" onclick="sshConnect()">
     </form>
   </div>
   <div style="text-align:center; display: flex; justify-content: center;">
     <div style="border: solid; margin:10px; padding: 10px;">
       <h1>テスト環境</h1>
       <p>WEBサーバ</p>
-      <a href="ssh://IPアドレス or ホスト名">WEB-01</a>
-      <a href="ssh://IPアドレス or ホスト名">WEB-02</a>
-      <a href="ssh://IPアドレス or ホスト名">WEB-03</a>
-      <a href="ssh://IPアドレス or ホスト名">WEB-04</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-01</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-02</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-03</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-04</a>
       <p>APサーバ</p>
-      <a href="ssh://IPアドレス or ホスト名">AP-01</a>
-      <a href="ssh://IPアドレス or ホスト名">AP-02</a>
-      <a href="ssh://IPアドレス or ホスト名">AP-03</a>
-      <a href="ssh://IPアドレス or ホスト名">AP-04</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-01</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-02</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-03</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-04</a>
       <p>DBサーバ</p>
-      <a href="ssh://IPアドレス or ホスト名">DB-01</a>
-      <a href="ssh://IPアドレス or ホスト名">DB-02</a>
-      <a href="ssh://IPアドレス or ホスト名">DB-03</a>
-      <a href="ssh://IPアドレス or ホスト名">DB-04</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-01</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-02</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-03</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-04</a>
     </div>
     <div style="border: solid; margin:10px; padding: 10px;">
       <h1>本番環境</h1>
       <p>WEBサーバ</p>
-      <a href="ssh://IPアドレス or ホスト名">WEB-01</a>
-      <a href="ssh://IPアドレス or ホスト名">WEB-02</a>
-      <a href="ssh://IPアドレス or ホスト名">WEB-03</a>
-      <a href="ssh://IPアドレス or ホスト名">WEB-04</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-01</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-02</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-03</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">WEB-04</a>
       <p>APサーバ</p>
-      <a href="ssh://IPアドレス or ホスト名">AP-01</a>
-      <a href="ssh://IPアドレス or ホスト名">AP-02</a>
-      <a href="ssh://IPアドレス or ホスト名">AP-03</a>
-      <a href="ssh://IPアドレス or ホスト名">AP-04</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-01</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-02</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-03</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">AP-04</a>
       <p>DBサーバ</p>
-      <a href="ssh://IPアドレス or ホスト名">DB-01</a>
-      <a href="ssh://IPアドレス or ホスト名">DB-02</a>
-      <a href="ssh://IPアドレス or ホスト名">DB-03</a>
-      <a href="ssh://IPアドレス or ホスト名">DB-04</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-01</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-02</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-03</a>
+      <a style="color: #02E833;" href="ssh://IPアドレス or ホスト名">DB-04</a>
     </div>
   </div>
+  <MARQUEE DIRECTION="right" SCROLLDELAY="150"><IMG src="mario.gif" width="60" height="60" border="0"></MARQUEE>
 
   <script>
     function sshConnect() {
